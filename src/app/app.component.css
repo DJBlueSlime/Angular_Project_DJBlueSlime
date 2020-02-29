@@ -3,7 +3,7 @@
 }
 j
 button {
-  background: hotpink;
+  background: lightskyblue;
   border: 3px solid black;
   border-radius: 4rem;
   font-size: 3rem;
@@ -16,7 +16,7 @@ button {
 }
 
 button:hover {
-  background: #ff409f;
+  background: #1fddff;
 }
 
 button:active {
