@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
-  name = 'Angular';
+  leftNumber;
+  rightNumber;
+  score = '';
+
+  genRanNum() {
+    const maxNum = 10;
+    const ranDec = Math.random() * maxNum;
+    const ranNum = Math.round(randomDecimal);
+    return ranNum;
+  }
 }
