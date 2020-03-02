@@ -1,5 +1,4 @@
-
-//var Score = 0;
+var Score = 0;
 
 import { Component } from '@angular/core';
 
@@ -31,13 +30,13 @@ export class AppComponent  {
     return ranNum;
   }
 
-  /*isGreater(firstValue, secondValue) {
+  isGreater(firstValue, secondValue) {
     if(firstValue > secondValue) {
       this.score = this.score + '😁';
     } else {
-      this.score = this.score + '❌';
+      Score = Score + '❌';
     }
 
     this.genNum();
-  }*/
+  }
 }
