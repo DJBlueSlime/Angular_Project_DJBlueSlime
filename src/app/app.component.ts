@@ -1,4 +1,6 @@
-var Score = 0;
+let score = AppComponent.score;
+const limit = 0;
+let book = false;
 
 import { Component } from '@angular/core';
 
@@ -12,7 +14,7 @@ import { Component } from '@angular/core';
 export class AppComponent  {
   leftNumber;
   rightNumber;
-  score = '';
+  let score = 0;
 
   constructor() {
     this.genNum();
@@ -32,9 +34,14 @@ export class AppComponent  {
 
   isGreater(firstValue, secondValue) {
     if(firstValue > secondValue) {
-      this.score = this.score + '😁';
+      this.score++;
     } else {
-      Score = Score + '❌';
+      if(score <= limit){
+        book = true;
+        score--;
+      } else {
+        book = false;
+      }
     }
 
     this.genNum();
